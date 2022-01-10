@@ -1,0 +1,113 @@
+/* mobile  46.1875em = 739px*/
+@media only screen and (max-width: 46.1875em) {
+	.s-col-full,
+	.s-full-width {
+		width: 100% !important;
+	}
+	.s-mt-8 {
+		margin-top: 8px !important;
+	}
+	#content .content-section {
+		width: 100%;
+	}
+
+	#navigation {
+		display: block;
+	}
+	#navigation > li {
+		display: block;
+	}
+	#navigation > li:first-child {
+		display: inline-block;
+	}
+	#navigation .subnav {
+		position: inherit;
+		background-color: #333;
+		top: 100%; /*cho canh chuẩn vị trí */
+	}
+	#navigation .subnav li {
+		display: block;
+		padding: 0 41px;
+	}
+	#navigation .subnav a {
+		color: #fff;
+	}
+
+	#header {
+		overflow: hidden; /* cắt bỏ tất cả những phần dư ra khỏi kích thước */
+	}
+	#header .search-btn {
+		display: none;
+	}
+	#header .mobile-menu-btn {
+		float: right;
+		padding: 0 21px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#header .menu-icons {
+		color: white;
+		font-size: 20px;
+		line-height: 46px;
+		margin-left: 10px;
+	}
+
+	#header .mobile-menu-btn:hover {
+		background-color: #ccc;
+	}
+	#content .img-member {
+		width: 60%;
+	}
+	#content .content-section {
+		max-width: 100%;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.contact-info {
+		margin-top: 32px;
+	}
+}
+/* tablet and mobile  */
+@media only screen and (max-width: 63.9375em) {
+	.btn {
+		padding: 15px 16px;
+	}
+	#navigation .subnav a {
+		padding: 5px 12px;
+	}
+	.contact-info .form-control {
+		padding: 15px;
+		font-size: 16px;
+	}
+	.contact-item {
+		line-height: 2;
+	}
+	.contact-form-btn {
+		font-size: 17px;
+	}
+	.social-section {
+		font-size: 48px;
+	}
+	#footer .social-section a {
+		margin: 0 8px;
+	}
+}
+
+/* tablet : width >=740px and <1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+	#content .content-section {
+		max-width: 100%;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#header .mobile-menu-btn {
+		display: none;
+	}
+}
+/* pc : width >1024px */
+@media only screen and (min-width: 64em) {
+	#header .mobile-menu-btn {
+		display: none;
+	}
+}
